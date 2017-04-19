@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../Content/CSS/mojie/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/mui.css" />
+		<link rel="stylesheet" type="text/css" href="../../Content/CSS/mojie/mui.picker.min.css" />
+		<link href="../../Content/CSS/mojie/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css"/>
+		
+	</head>
+	<body class="mui-fullscreen">
+		<div id="setting" class="mui-page bg"><!--单页面开始-->
+			<!--页面主内容区开始-->
+			<div class="mui-page-content">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell info-main bgstyle">
+								<figure ><img style="width:100%;" src="../../Content/Images/mojie/icon-demo.jpg"/></figure>
+							</li>
+						</ul>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell" style="padding-right:0;">
+								<span class="mall-title">会员姓名</span>
+								<span class="mall-info">杨帆</span>
+							</li>
+							<li class="mui-table-view-cell" style="padding-right:0;">
+								<span class="mall-title">手机</span>
+								<span class="mall-info">15692282990</span>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id='showUserPicker' class="mui-navigate-right">
+									<span class="mall-title">性别</span>
+									<span id='userResult' class="mall-info"></span>
+									<input type="hidden" name="sex" id="sex" value="" />
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#privacy" data-options='{"type":"date","beginYear":1960,"endYear":2016}' class="mui-navigate-right birthdiy">
+									<span class="mall-title">生日日期</span>
+									<span id="data-time" class="mall-info"></span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#javascript;" id="showCityPicker3" class="mui-navigate-right">
+									<span class="mall-title">地区</span>
+									<span id="cityResult3" class="mall-info"></span>
+									<input type="hidden" name="province" id="province" value="" />
+									<input type="hidden" name="city" id="city" value="" />
+									<input type="hidden" name="distract" id="distract" value="" />
+								</a>
+							</li>
+						</ul>
+						<div class="submit" style="margin-top:1.667rem;"><!--添加按钮-->
+							<a class="mui-btn mui-btn-danger mui-btn-block" href="">保存信息</a>					
+						</div><!--添加按钮-->
+					</div>
+				</div>
+			</div>
+			<!--页面主内容区结束-->
+		</div>		
+	</body>
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script src="../../Content/JS/mojie/mui.picker.min.js"></script>
+<script src="../../Content/JS/mojie/mui.poppicker.js"></script>
+<script src="../../Content/JS/mojie/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack:true //启用右滑关闭功能
+	});
+	(function($, doc) {
+		$.init();
+		$.ready(function() {
+			//普通示例
+			var userPicker = new $.PopPicker();
+			userPicker.setData([{
+				value: '10',
+				text: '男'
+			},{
+				value: '5', 
+				text: '女'
+			}]);
+			var showUserPickerButton = doc.getElementById('showUserPicker');
+			var userResult = doc.getElementById('userResult');
+			var sex = doc.getElementById('sex');
+			showUserPickerButton.addEventListener('tap', function(event) {
+				userPicker.show(function(items) {
+					userResult.innerText = items[0].text;
+					sex.value = items[0].value;
+					//返回 false 可以阻止选择框的关闭
+					//return false;
+				});
+			}, false);
+			//三级联示例
+			var cityPicker3 = new $.PopPicker({
+				layer: 3
+			});
+			cityPicker3.setData(cityData3);
+			var showCityPickerButton = doc.getElementById('showCityPicker3');
+			var cityResult3 = doc.getElementById('cityResult3');
+			var province = doc.getElementById('province');
+			var city = doc.getElementById('city');
+			var distract = doc.getElementById('distract');
+			showCityPickerButton.addEventListener('tap', function(event) {
+				cityPicker3.show(function(items) {
+					cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+					province.value = (items[0] || {}).text;
+					city.value = (items[1] || {}).text;
+					distract.value = (items[2] || {}).text;
+					//返回 false 可以阻止选择框的关闭
+					//return false;
+				});
+			}, false);
+		});
+	})(mui,document);
+</script>
+<script>
+	(function($) {
+		$.init();
+		var result = $('#data-time')[0];
+		var btns = $('.birthdiy');
+		btns.each(function(i, btn) {
+			btn.addEventListener('tap', function() {
+				var optionsJson = this.getAttribute('data-options') || '{}';
+				var options = JSON.parse(optionsJson);
+				var id = this.getAttribute('id');
+				var picker = new $.DtPicker(options);
+				picker.show(function(rs) {
+					result.innerText = rs.text;
+					picker.dispose();
+				});
+			}, false);
+		});
+	})(mui);
+</script>
+</html>

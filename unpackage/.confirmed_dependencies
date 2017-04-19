@@ -1,0 +1,346 @@
+{
+	"index.html": {
+		"resources": [
+			"Views/Mojie/mine.html",
+			"Views/Mojie/manageaddress.html",
+			"Views/Mojie/shoppingcart.html",
+			"Views/Mojie/index.html",
+			"Views/Mojie/myaddress.html",
+			"Views/Mojie/chooseaddress.html",
+			"Views/Mojie/MyCoupon.html",
+			"Views/Mojie/MyPrize.html",
+			"Views/Mojie/GetCoupon.html",
+			"Views/Mojie/Myinfo.html",
+			"Content/CSS/mojie/style.css",
+			"Views/Mojie/MyTrace.html",
+			"Views/Mojie/myorder.html",
+			"Views/Mojie/confirmorder.html",
+			"Views/Mojie/category.html",
+			"Views/Mojie/orderdetail.html",
+			"Views/Mojie/pullrefresh_sub.html",
+			"Views/Mojie/pullrefresh_main.html",
+			"Views/Mojie/productdetail.html",
+			"Views/Mojie/addcomment.html"
+		],
+		"refer": [
+			"Views/Mojie/mine.html",
+			"Views/Mojie/manageaddress.html",
+			"Views/Mojie/shoppingcart.html",
+			"Views/Mojie/index.html",
+			"Views/Mojie/myaddress.html",
+			"Views/Mojie/chooseaddress.html",
+			"Views/Mojie/MyCoupon.html",
+			"Views/Mojie/MyPrize.html",
+			"Views/Mojie/GetCoupon.html",
+			"Views/Mojie/Myinfo.html",
+			"Views/Mojie/MyTrace.html",
+			"Views/Mojie/myorder.html",
+			"Views/Mojie/confirmorder.html",
+			"Views/Mojie/category.html",
+			"Views/Mojie/orderdetail.html",
+			"Views/Mojie/pullrefresh_sub.html",
+			"Views/Mojie/pullrefresh_main.html",
+			"Views/Mojie/productdetail.html",
+			"Views/Mojie/addcomment.html"
+		]
+	},
+	"Views/Mojie/mine.html": {
+		"resources": [
+			"Content/Images/mojie/1075082.png",
+			"Content/Images/mojie/558013.png",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/CSS/mojie/style.css",
+			"Content/Images/mojie/1101044.png",
+			"Content/Images/mojie/1101059.png",
+			"Content/Images/mojie/558012.png",
+			"Content/Images/mojie/1101034.png",
+			"Content/CSS/mojie/mui.min.css",
+			"Content/JS/mojie/holder.js",
+			"Content/Images/mojie/1101033.png",
+			"Content/JS/mojie/mui.min.js",
+			"Content/Images/mojie/right.png",
+			"Content/Images/mojie/mnie-bg.jpg",
+			"Content/CSS/fonts/mui.ttf",
+			"Content/Images/mojie/1101165.png",
+			"index.html",
+			"Content/CSS/mojie/mui.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/manageaddress.html": {
+		"resources": [
+			"Content/CSS/mojie/style.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"Content/JS/mojie/jquery.js",
+			"Content/CSS/fonts/mui.ttf",
+			"Content/Images/mojie/check.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/shoppingcart.html": {
+		"resources": [
+			"Content/Images/mojie/1.png",
+			"Content/Images/mojie/1117690.png",
+			"Content/Images/mojie/checke.png",
+			"index.html",
+			"Content/JS/mojie/jquery.js"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/index.html": {
+		"resources": [
+			"index.html",
+			"Content/CSS/mojie/mui.min.css",
+			"Content/CSS/fonts/mui-icons-extra.ttf",
+			"Content/JS/mojie/holder.js",
+			"Content/CSS/mojie/index.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/fonts/iconfont.woff",
+			"Content/Images/mojie/logo.jpg",
+			"Content/CSS/mojie/mui.css",
+			"Content/Images/mojie/mnie-bg.jpg",
+			"Content/CSS/mojie/iconfont.css",
+			"Content/CSS/mojie/demo.css",
+			"Content/Images/mojie/1.png",
+			"Content/Images/mojie/index-slider-1.jpg",
+			"Content/Images/mojie/index-slider-3.jpg",
+			"Content/Images/mojie/index-slider-2.jpg",
+			"Content/Images/mojie/notice.jpg",
+			"Content/Images/mojie/index-slider-4.jpg",
+			"Content/Images/mojie/coupon.png",
+			"Content/CSS/fonts/mui.ttf",
+			"Content/Images/mojie/新.png",
+			"Content/Images/mojie/秒.png",
+			"Content/Images/mojie/特.png",
+			"Content/Images/mojie/爆.png",
+			"Content/Images/mojie/cate2.png",
+			"Content/Images/mojie/cate1.png",
+			"Content/Images/mojie/cate4.png",
+			"Content/Images/mojie/cate3.png",
+			"Content/Images/mojie/index-header-bg.jpg",
+			"Content/CSS/mojie/style.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/myaddress.html": {
+		"resources": [
+			"Content/CSS/mojie/style.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"Content/CSS/fonts/mui.ttf",
+			"Content/Images/mojie/check.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/chooseaddress.html": {
+		"resources": [
+			"Content/CSS/mojie/style.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"Content/CSS/fonts/mui.ttf",
+			"Content/Images/mojie/check.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/MyCoupon.html": {
+		"resources": [
+			"Content/CSS/mojie/style.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/Images/mojie/coupon-bg.png",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"index.html",
+			"Views/Mojie/Coupondetails.html"
+		],
+		"refer": [
+			"index.html",
+			"Views/Mojie/Coupondetails.html"
+		]
+	},
+	"Views/Mojie/Coupondetails.html": {
+		"resources": [
+			"Views/Mojie/MyCoupon.html"
+		],
+		"refer": [
+			"Views/Mojie/MyCoupon.html"
+		]
+	},
+	"Views/Mojie/MyPrize.html": {
+		"resources": [
+			"Content/Images/mojie/1.png",
+			"Content/CSS/mojie/style.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/Images/mojie/coupon-bg.png",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/GetCoupon.html": {
+		"resources": [
+			"Content/CSS/mojie/style.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/Images/mojie/coupon-bg.png",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"index.html",
+			"Content/Images/mojie/getcoupon.jpg"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/Myinfo.html": {
+		"resources": [
+			"Content/CSS/mojie/mui.picker.min.css",
+			"Content/CSS/mojie/feedback.css",
+			"Content/CSS/mojie/style.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.picker.min.js",
+			"Content/Images/mojie/icon-demo.jpg",
+			"Content/CSS/mojie/app.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.min.css",
+			"Content/CSS/mojie/mui.css",
+			"Content/CSS/fonts/mui.ttf",
+			"Content/JS/mojie/city.data-3.js",
+			"Content/JS/mojie/mui.poppicker.js",
+			"Content/CSS/mojie/mui.poppicker.css",
+			"index.html",
+			"Content/Images/mojie/mnie-bg.jpg"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/MyTrace.html": {
+		"resources": [
+			"Content/Images/mojie/1.png",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/confirmorder.html": {
+		"resources": [
+			"Content/CSS/fonts/mui.ttf",
+			"Content/Images/mojie/1.png",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"index.html",
+			"Views/Mojie/addcomment.html"
+		],
+		"refer": [
+			"index.html",
+			"Views/Mojie/addcomment.html"
+		]
+	},
+	"Views/Mojie/myorder.html": {
+		"resources": [
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/category.html": {
+		"resources": [
+			"Content/Images/mojie/1.png",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/CSS/mojie/app.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"Content/CSS/fonts/mui.ttf",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/orderdetail.html": {
+		"resources": [
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/pullrefresh_sub.html": {
+		"resources": [
+			"Content/Images/mojie/1.png"
+		]
+	},
+	"Views/Mojie/pullrefresh_main.html": {
+		"resources": [
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"Content/JS/mojie/jquery.js",
+			"Content/Images/mojie/down-red.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/productdetail.html": {
+		"resources": [
+			"Content/Images/mojie/1.png",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"Content/CSS/fonts/mui.ttf",
+			"index.html",
+			"Content/CSS/mojie/style.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"Views/Mojie/addcomment.html": {
+		"resources": [
+			"Content/CSS/mojie/feedback.css",
+			"Content/CSS/mojie/icons-extra.css",
+			"Content/JS/mojie/mui.min.js",
+			"Content/CSS/mojie/mui.css",
+			"Content/JS/mojie/feedback.js",
+			"Content/Images/mojie/checke.png",
+			"Content/CSS/fonts/mui.ttf",
+			"Content/Images/mojie/check.png",
+			"Views/Mojie/confirmorder.html",
+			"index.html",
+			"Content/CSS/mojie/style.css"
+		],
+		"refer": [
+			"Views/Mojie/confirmorder.html",
+			"index.html"
+		]
+	}
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../Content/CSS/mojie/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css" />
+	</head>
+	<body>
+		<div class="contaniner shopingcart">
+			<section class="car-main"> <!--购物车容器-->
+				<div class="car-list"> <!--购物车列表容器-->
+					<div class="item-list"> <!--购物车单品-->
+						<div class="item-from">
+							<div class="shopcar-checkbox">
+								<img name="selAll" class="not_sel" src="../../Content/Images/mojie/check.png" style="display: none;"/>
+								<img name="selAll" class="sel" src="../../Content/Images/mojie/checke.png" />
+							</div>
+							<figure>
+								<a href="">
+									<img src="../../Content/Images/mojie/1.png"/>
+								</a>
+								<input type="checkbox" name="" id="" value="" style="display: none;"/>
+							</figure>	
+							<dl>
+								<dt>超级大品牌服装现在买只要998</dt>
+								<dd>颜色：经典绮丽款</dd>
+								<dd>尺寸：L</dd>
+							</dl>
+							<figure class="jine">
+								<span>￥653.00</span>
+							</figure>
+						</div>
+						<div class="item-action">
+							<div class="mui-numbox">
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+							<small><img src="../../Content/Images/mojie/1117690.png"/></small>
+						</div>
+					</div>	<!--购物车单品-->
+					<div class="item-list"> <!--购物车单品-->
+						<div class="item-from">
+							<div class="shopcar-checkbox">
+								<img name="selAll" class="not_sel" src="../../Content/Images/mojie/check.png" />
+								<img name="selAll" class="sel" src="../../Content/Images/mojie/checke.png" style="display: none;"/>
+							</div>
+							<figure>
+								<a href="">
+									<img src="../../Content/Images/mojie/1.png"/>
+								</a>
+								<input type="checkbox" name="" id="" value="" style="display: none;"/>
+							</figure>	
+							<dl>
+								<dt>超级大品牌服装现在买只要998</dt>
+								<dd>颜色：经典绮丽款</dd>
+								<dd>尺寸：L</dd>
+							</dl>
+							<figure class="jine">
+								￥<span>653.00</span>
+							</figure>
+						</div>
+						<div class="item-action">
+							<div class="mui-numbox">
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+							<small><img src="../../Content/Images/mojie/1117690.png"/></small>
+						</div>
+					</div>	<!--购物车单品-->
+				</div>      <!--购物车列表容器-->
+			</section>		<!--购物车容器-->
+			<!--去结算-->
+			<div style="margin-bottom: 5rem;"></div>
+		</div>
+		<footer class="trade-footer fixed-footer">
+			<div class="trade-check-all shopcar-checkbox">
+				<img name="selAll" class="not_sel" src="../../Content/Images/mojie/check.png" />
+				<img name="selAll" class="sel" src="../../Content/Images/mojie/checke.png" style="display: none;"/>
+				<span>全&nbsp;选</span>
+			</div>
+			<div class="trade-price-info">
+				<ul>
+					<li style="height:2rem;">
+						<span>合计：</span>
+						<span class="price">￥763.00</span></li>
+					<li ><span>不含运费\优惠折扣</span></li>
+				</ul>
+			</div>
+			<div class="trade-order-submit fr">
+				<a href="confirmorder.html">去结算</a>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script src="../../Content/JS/mojie/jquery.js"></script>
+<script type="text/javascript">
+	mui.init();//js开启
+</script>
+<script type="text/javascript">
+	$(".shopcar-checkbox label").on('touchstart',function(){
+		if($(this).hasClass('shopcar-checkd')){
+			$(".shopcar-checkbox label").removeClass("shopcar-checkd")
+		}else{
+			$(".shopcar-checkbox label").addClass("shopcar-checkd")
+		}
+	})
+</script>

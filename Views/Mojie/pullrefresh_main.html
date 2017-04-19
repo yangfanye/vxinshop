@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../Content/CSS/mojie/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/demo.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/iconfont.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css" />
+	</head>
+
+	<body>
+		<section id="list">
+			<nav>
+				<ul>
+					<li class="list-active" intSortField="0">
+						<a href="#">
+							<span>默认</span>
+						</a>
+					</li>
+					<li intSortField="1">
+						<a href="#">
+							<span>销量</span>
+						</a>
+					</li>
+					<li intSortField="2">
+						<a id="jiage" href="#">
+							<span>价格</span>
+							<img  src="../../Content/Images/mojie/down-red.png" style="display:none";/>
+						</a>
+					</li>
+					<li intSortField="3">
+						<a href="#">
+							<span>评价</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<div class="mui-content" >
+		</div>
+		<footer id="footer" class="mui-bar mui-bar-tab mui-bar-footer trade-footer fixed-footer">
+			<div class="mui-btn-blue">
+				<a  class="mui-btn-bule" href="index.html"><i class="icon iconfont icon-iconhuidaoshouye"></i></a>
+				<a  class="mui-btn-bule" href="shoppingcart.html"><i class="icon iconfont icon-gouwuche-01"></i></a>
+				<a  class="mui-btn-bule" href="category.html"><i class="icon iconfont icon-fenlei"></i></a>
+				<a  class="mui-btn-bule" href="mine.html"><i class="icon iconfont icon-icongerenzhongxin-01"></i></a>
+			</div>
+		</footer>
+		<input type="hidden" name="tema" id="tema" value="" />
+	</body>
+	
+	<script src="../../Content/JS/mojie/mui.min.js"></script>
+	<script src="../../Content/JS/mojie/jquery.js"></script>
+	<script src="../../Content/JS/mojie/mojie.js"></script>
+	<script type="text/javascript">
+		//启用双击监听
+		mui.init({
+			gestureConfig:{
+				doubletap:true
+			},
+			subpages:[{ 
+				url:'pullrefresh_sub.html',
+				id:'pullrefresh_sub.html',
+				styles:{
+					top: '50px',
+					bottom: '0px', 
+				}
+			}] 
+		});
+	
+		var contentWebview = null;
+		document.querySelector('section').addEventListener('doubletap',function () {
+			if(contentWebview==null){
+				contentWebview = plus.webview.currentWebview().children()[0];
+			}
+			contentWebview.evalJS("mui('#pullrefresh').pullRefresh().scrollTo(0,0,100)");
+		});
+	</script>
+	<script type="text/javascript">
+		//列表页排序
+		$(function(){
+			var count = 0 
+			$("#list nav ul li").click(function(){
+				$(this).siblings().removeClass('list-active').end().addClass('list-active');
+				if($(this).find("a[id]").length) {
+					$(this).find("img").show();
+					switch(count)
+					{
+						case 0:
+								$(this).find("img").attr('src','../../Content/Images/mojie/down-red.png');
+								var strSortOrder = "desc";
+								count ++;
+								break;
+						case 1:
+								$(this).find("img").attr('src','../../Content/Images/mojie/up-red.png');
+								var strSortOrder = "asc";
+								count = 0;
+								break;
+					}
+				}
+				var teamCode = getQueryString('teamCode');
+				var search = getQueryString('search');
+				var BrandName = getQueryString('BrandName');
+				var ProductGroup = getQueryString('ProductGroup');
+				var ProductType = getQueryString('ProductType');
+				var intSortField = $(this).attr('intSortField');
+				var urlstr =  "'../MobileMall/teamproductajax?teamCode=' + teamCode + '&search=' + search + '&BrandName=' + BrandName + '&ProductGroup=' + ProductGroup + '&ProductType=' + ProductType + '&intSortField=' + intSortField + '&strSortOrder=' + strSortOrder";
+				getajax(urlstr);
+			});
+			function getajax(urlstr){
+				if(urlstr){
+					$.ajax({
+						type: 'POST',
+					    url: urlstr,
+						dataType: 'json',
+					    success: function(result) {  	
+					    	if(result.data.length == 0) {
+					    		var ul = $('#goods-list');
+					    		ul.innerHTML += "<div id=\"empty-data\">";
+					    		ul.innerHTML += "figure><i class=\"icon iconfont icon-quanbudingdan-01 mall-color-btn\"></i></figure>";
+								ul.innerHTML += "<span>没有您要的订单</span></div>";			
+					    	}
+					    	if (result.data.length > 0) {
+					    		for (var i=0;i<result.data.length;i++) {
+					    			li.className = 'goods-list-cell';
+									li.innerHTML += "<a href=\"orderdetail.html\">";
+									li.innerHTML += "<figure><img src=\"" +图片地址+ "\"/></figure>";
+									li.innerHTML += "<span class=\"mall-color-title mall-white\">" + result.data.ProductName + "</span>";
+									li.innerHTML += "<section>";
+									li.innerHTML += "<span class=\"mall-font-14 mall-color-btn\">" +价格+"</span>";
+									li.innerHTML += "<span class=\"fr mall-color-def\">" + result.data.MonthSaleAmount +"人付款</span>";
+									li.innerHTML += "</section></a>";
+									li.innerHTML += "<a class=\"addshopcart\" herf=\"\">加入购物车</a>";
+					    		}
+							}
+						},
+					    error: function (XMLHttpRequest, textStatus, errorThrown) {		
+					    	console.info('error');
+				        }
+					});
+				}else{
+					return false;
+				}
+			}
+		});
+	</script>
+
+</html>

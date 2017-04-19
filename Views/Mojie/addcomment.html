@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="feedback">
+	<head>
+		<meta charset="UTF-8">
+		<title>发表评论</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../Content/CSS/mojie/mui.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/feedback.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css"/>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="row mui-input-row ">
+				<textarea id='question' class="mui-input-clear question mall-color-title" placeholder="亲!写下购买体会和使用感受来帮助其他小伙伴"></textarea>
+			</div>
+			<p>最多上传3张图片,总大小10M以下)</p>
+			<div id='image-list' class="row image-list"></div>
+			<div class="mui-content-padded">
+				<div class="mui-inline">评分</div>
+				<div class="icons mui-inline fr ">
+					<i data-index="1" class="mui-icon mui-icon-star"></i>
+					<i data-index="2" class="mui-icon mui-icon-star"></i>
+					<i data-index="3" class="mui-icon mui-icon-star"></i>
+					<i data-index="4" class="mui-icon mui-icon-star"></i>
+					<i data-index="5" class="mui-icon mui-icon-star"></i>
+				</div>
+			</div><br />
+		</div>
+		<footer class="trade-footer fixed-footer">
+			<div class="trade-check-all shopcar-checkbox">
+				<img name="selAll" class="not_sel" src="../../Content/Images/mojie/check.png" />
+				<img name="selAll" class="sel" src="../../Content/Images/mojie/checke.png" style="display: none;"/>
+				<span>匿名评价</span>
+			</div>
+			<div class="trade-order-submit fr">
+				<a id="submit">发表评价</a>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script src="../../Content/JS/mojie/feedback.js"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack:true //启用右滑关闭功能
+	});
+</script>

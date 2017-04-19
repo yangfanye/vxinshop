@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>确认订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../Content/CSS/mojie/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css" />
+	</head>
+	<body>
+		<div class="contaniner fixed-contb">
+			<section class="address-main conorder-main"><!--确认订单容器-->
+				<div class="address-list "><!--确认订单列表-->
+					<div class="item-list bg mall-item-list"><!--地址元素-->
+						<div class="item-from choose-item-from" >
+							<a href="chooseaddress.html">
+								<ul class="mui-navigate-right">
+									<li class="title">
+										<span class="mall-font-14 mall-color-title">杨帆</span>
+										<span class="mall-font-14 mall-color-title">15692282990</span>
+										<span class="default">&nbsp;默认&nbsp;</span>
+									</li>
+									<li>
+										<p class="mall-color-title">&nbsp;天津市河西区友谊路5号北方金融大厦12C</p>
+									</li>
+								</ul>
+							</a>
+						</div>
+					</div><!--地址元素-->
+					<div class="myorder-main bg"><!--商品信息容器-->
+						<ul class="mui-table-view table-view-clean">
+							<li class="mui-table-view-cell mui-table-list table-view-clean">
+								<span class="mall-font-14 mall-color-title">商品信息</span>
+							</li>
+						</ul>
+						<ul class="mui-table-view table-view-clean"><!--商品信息-->
+							<li class="mui-table-view-cell mall-table-view-cell table-view-clean">
+								<figure><img style="width:100%;" src="../../Content/Images/mojie/1.png"/></figure>
+								<ul class="fr">
+									<li class="goods-name"><p class="fl">蒂佳婷水润亮彩焕肤面膜蒂佳婷水润亮彩焕肤面膜蒂佳婷水润亮彩焕肤面膜</p></li>
+									<li class="goods-attr">
+										<span class="mall-color-btn" style="font-weight: 700;">￥196.00</span>
+										<span class="fr">*1</span>
+									</li>
+								</ul>
+							</li>	
+						</ul><!--商品信息-->
+						<ul class="mui-table-view" style="position: relative;">
+							<li class="mui-table-view-cell" >
+								<span class="fr mall-font-14" style="width:100%;">共3件商品，合计<strong class="mall-color-btn">￥698.00</strong>元</span>
+							</li>
+							<li class="mui-table-view-cell">
+								<span>配送方式</span>
+								<span class="fr">运费:￥12.00</span>
+							</li>
+							<li class="mui-table-view-cell">
+								<textarea id="textarea" rows="5" placeholder="给卖家留言："></textarea>
+							</li>
+							<!--<li class="mui-table-view-cell">
+								<span>获得积分</span>
+								<span class="fr">0</span>
+							</li>-->
+							<li class="mui-table-view-cell conorder-coupon">
+								<a class="mui-navigate-right" href="" style="">
+									<span>优惠券</span>
+									<span style="text-align: right;">1张可用</span>
+								</a>
+								<div class="coupon-list-coupon" id="selectCouponList">
+		                            <table>
+		                                    <tr onclick="SelectCoupon('@couponItem.CouponID','@couponItem.Price');">
+		                                        <td>30 元</td>
+		                                        <td><img id="@imgId" src="../../Content/Images/mojie/1-1.png"/ style="width:2.5rem;height:2.5rem;"></td>
+		                                    </tr>
+
+		                                    <tr></tr>
+		                            </table>
+		                        </div>
+							</li>
+						</ul>
+					</div><!--商品信息容器-->
+				</div><!--确认订单列表-->
+			</section><!--确认订单容器容器-->
+		</div>	
+		<footer class="trade-footer fixed-footer">
+			<div class="trade-order-submit fr">
+				<a href="">提交订单</a>
+			</div>
+			<div class="trade-price-info fr">
+				<span class="price mall-color-btn mall-font-14">合计：￥763.00</span>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack:true //启用右滑关闭功能
+	});
+</script>

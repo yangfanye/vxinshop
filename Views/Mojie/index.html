@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../Content/CSS/mojie/mui.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/demo.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/iconfont.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css"/>
+	</head>
+	<body >
+		<div id="index" class="contaniner index mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll">
+					<div>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell table-view-cell-clean">
+								<a href="index.html"><img src="../../Content/Images/mojie/demo/index.png"/>首页</a>
+								<a href="pullrefresh_main.html"><img src="../../Content/Images/mojie/demo/member.png"/>会员专享</a>
+							</li>
+							<li class="mui-table-view-cell table-view-cell-clean">
+								<a href=""><img src="../../Content/Images/mojie/demo/skike.png"/>限时秒杀</a>
+								<a href=""><img src="../../Content/Images/mojie/demo/hot.png"/>线上爆款</a>
+							</li>
+						</ul>
+						<ul class="mui-table-view mui-table-view-chevron table-view-clean item-category">
+							<li class="mui-table-view-cell table-view-cell-clean">
+								<a href="manageaddress.html">
+									<img src="../../Content/Images/mojie/demo/mianmo.png"/>
+									<span>面膜</span>
+								</a>
+								<a href="Myinfo.html">
+									<img src="../../Content/Images/mojie/demo/hufu.png"/>
+									<span>护肤</span>
+								</a>
+								<a href="">
+									<img src="../../Content/Images/mojie/demo/caizhuang.png"/>
+									<span>彩妆</span>
+								</a>
+								<a href="">
+									<img src="../../Content/Images/mojie/demo/tihu.png"/>
+									<span>体护</span>
+								</a>
+								<a href="">
+									<img src="../../Content/Images/mojie/demo/gongju.png"/>
+									<span>工具</span>
+								</a>
+								<a href="">
+									<img src="../../Content/Images/mojie/demo/baihuo.png"/>
+									<span>百货</span>
+								</a>
+								<a href="">
+									<img src="../../Content/Images/mojie/demo/xiangfen.png"/>
+									<span>香氛</span>
+								</a>
+								<a href="">
+									<img src="../../Content/Images/mojie/demo/quanpin.png"/>
+									<span>全品</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<footer class="trade-footer fixed-footer">
+					<div class="trade-order-submit">
+						<a class="mui-plus-pullrefresh" style="border-right:1px solid #CCCCCC;" href="mine.html"><i class="con iconfont icon-icongerenzhongxin-01"></i>个人中心</a>
+						<a href="category.html"><i class="con iconfont icon-fenlei2"></i>分类</a>
+					</div>
+				</footer>
+			</aside>
+			<!--侧滑菜单部分-->
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<header id="header" class="mui-bar mui-bar-nav"><!--头部-->
+						<a id="offCanvasShow" class="icon iconfont icon-fenlei mui-pull-left" href="javascript:;"></a>
+						<figure><img src="../../Content/Images/mojie/logo.png"/><!--<h1 class="">膜界</h1>--></figure>
+						<a id="category" class="icon iconfont icon-fangdajing mui-pull-right" href="category.html"></a>
+					</header><!--头部-->
+					<div  class="mui-scroll" >
+						<nav><!--导航栏-->
+							<ul>
+								<li><a href="pullrefresh_main.html">限时秒杀</a></li>
+								<!--<li><a href="">活动专区</a></li>-->
+								<li><a href="">全部宝贝</a></li>
+								<li><a href="">新品上架</a></li>
+								<li><a href="">了解膜界</a></li>
+							</ul>
+						</nav><!--导航栏-->
+						<!--轮播开始-->
+						<div id="slider" class="mui-slider" >
+							<div class="mui-slider-group mui-slider-loop">
+								<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="../../Content/Images/mojie/demo/slider-4.jpg">
+									</a>
+								</div>
+								<!-- 第一张 -->
+								<div class="mui-slider-item">
+									<a href="pullrefresh_main.html">
+										<img src="../../Content/Images/mojie/demo/slider-1.jpg">
+									</a>
+								</div>
+								<!-- 第二张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="../../Content/Images/mojie/demo/slider-2.jpg">
+									</a>
+								</div>
+								<!-- 第三张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="../../Content/Images/mojie/demo/slider-3.jpg">
+									</a>
+								</div>
+								<!-- 第四张 -->
+								<div class="mui-slider-item">
+									<a href="#">
+										<img src="../../Content/Images/mojie/demo/slider-4.jpg">
+									</a>
+								</div>
+								<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+								<div class="mui-slider-item mui-slider-item-duplicate">
+									<a href="#">
+										<img src="../../Content/Images/mojie/demo/slider-1.jpg">
+									</a>
+								</div>
+							</div>
+							<div class="mui-slider-indicator">
+								<div class="mui-indicator mui-active"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+								<div class="mui-indicator"></div>
+							</div>
+						</div>
+						<!--轮播结束-->
+						<!--左右页面滑动开始-->
+						<div class="mui-table-view-cell title-warp">
+								<h2 class="seckill-title fl mall-font-14">秒杀专区</h2>
+							<div class="seckill-time mall-font-14 fr" id="seckill-time">
+								<span class="">还剩：</span>
+								<span class="seckill-time-span">03</span>
+								<span class="">时</span>
+								<span class="seckill-time-span">03</span>
+								<span class="">分</span>
+								<span class="seckill-time-span">03</span>
+								<span class="">秒</span>
+							</div>
+						</div>
+						<div class="mui-slider skike">
+					        <div class="mui-slider-group mui-slider-loop">
+					        	<div class="mui-slider-item">
+					                <ul class="mui-table-view mui-grid-view">
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+					                    	<a href="#">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-1.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-6">
+					                    	<a href="#">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-2.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <!--<li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="#">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-3.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>-->
+					                </ul>
+					            </div>
+					        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+					            <!--<div class="mui-slider-item mui-slider-item-duplicate">
+					                <ul class="mui-table-view mui-grid-view">
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/index-slider-2.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/index-slider-3.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="#">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-4.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                </ul>
+					            </div>-->
+					            <!--<div class="mui-slider-item">
+					                <ul class="mui-table-view mui-grid-view">
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="#">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-1.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="#">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-2.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="#">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-3.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                </ul>
+					            </div>-->
+					            <!--<div class="mui-slider-item">
+					                <ul class="mui-table-view mui-grid-view">
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-2.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/demo/slider-3.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/index-slider-4.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                </ul>
+					            </div>-->
+					            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+					            <!--<div class="mui-slider-item mui-slider-item-duplicate">
+					                <ul class="mui-table-view mui-grid-view">
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/index-slider-1.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/index-slider-2.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+					                    	<a href="productdetail.html">
+					                    		<img class="mui-media-object" src="../../Content/Images/mojie/index-slider-3.jpg">
+					                            <div class="mui-media-body"><span class="mall-color-btn mall-font-14">￥58.00</span><span class="mall-font-10 delete mall-color-def">98.00</span></div>
+					                    	</a>
+					                    </li>
+					                </ul>
+					            </div>-->
+					        </div>
+					        <!--<div class="mui-slider-indicator" style="position: static;background-color: #fff;">
+					            <div class="mui-number">
+					                <span>1</span> / 2
+					            </div>
+					        </div>-->
+					    </div>
+					    <!--左右页面滑动结束-->
+					    <!--优惠券开始-->
+					    <div class="coupon-main">
+					    	<div class="mui-table-view-cell title-warp table-view-cell-clean">
+								<h2 class="seckill-title fl mall-font-14">优惠券</h2>
+							</div>
+					    	<ul>
+					    		<li class="mui-col-xs-4 fl">
+					    			<div class="coupon bgstyle">
+										<div class="mall-color-btn">
+											<sup style="vertical-align: super;top:-1rem;text-align: left;">￥</sup>
+											<span style="font-size: 3.33rem;line-height: 4rem;">10</span>
+											<sub style="">元</sub></br>
+											<span>代金券</span>
+										</div>
+										<div class="mall-color-btn default" >
+											<span class="default">满158元使用</span>
+										</div>
+									</div>
+					    		</li>
+					    		<li class="mui-col-xs-4 fl">
+					    			<div class="coupon bgstyle">
+										<div class="mall-color-btn">
+											<sup style="vertical-align: super;top:-1rem;">￥</sup>
+											<span style="font-size: 3.33rem;line-height: 4rem;">20</span>
+											<sub style="">元</sub></br>
+											<span>代金券</span>
+										</div>
+										<div class="mall-color-btn default" >
+											<span class="default">满258元使用</span>
+										</div>
+									</div>
+					    		</li>
+					    		<li class="mui-col-xs-4 fl">
+					    			<div class="coupon bgstyle">
+										<div class="mall-color-btn">
+											<sup style="vertical-align: super;top:-1rem;">￥</sup>
+											<span style="font-size: 3.33rem;line-height:4rem;">30</span>
+											<sub style="">元</sub></br>
+											<span>代金券</span>
+										</div>
+										<div class="mall-color-btn default" >
+											<span class="default">满358元使用</span>
+										</div>
+									</div>
+					    		</li>
+					    	</ul>
+					    </div>
+					    <!--优惠券结束-->
+					    <!--单个商品开始-->
+					    <div class="one-goods" style="margin-top: 1rem;">
+					    	<div class="mui-table-view-cell title-warp">
+								<h2 class="seckill-title fl mall-font-14">秒杀专区 Sale GoodS</h2>
+							</div>
+							<a href=""><img src="../../Content/Images/mojie/demo/slider-3.jpg"/></a>
+					    </div>
+						<!--单个商品结束-->
+						<!--两个商品开始-->
+					    <div class="two-goods" style="margin-top: 1rem;">
+					    	<div class="mui-table-view-cell title-warp">
+								<h2 class="seckill-title fl mall-font-14">秒杀专区 Sale GoodS 2</h2>
+							</div>
+							<div class="item bg"><!--图在左侧-->
+								<figure class="fl"><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+								<div class="item-info fr">
+									<p class="mall-color-title">贝德玛贝德玛贝德玛贝德玛贝德玛贝德玛贝德玛</p>
+									<section class="fr mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section></br>
+									<a class="fr" href="">立即购买</a>
+								</div>
+							</div>
+							<div class="item bg"><!--图在右侧-->
+								<figure class="fr"><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+								<div class="item-info fl">
+									<p class="mall-color-title">贝德玛贝德玛贝德玛贝德玛贝德玛贝德玛贝德玛</p>
+									<section class="fl mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section></br>
+									<a class="fl" href="">立即购买</a>
+								</div>
+							</div>
+					    </div>
+						<!--两个商品结束-->
+						<!--二个商品列表开始-->
+					    <div class="list-goods" style="margin-top: 1rem;">
+					    	<div class="mui-table-view-cell title-warp">
+								<h2 class="seckill-title fl mall-font-14">秒杀专区 Sale GoodS 二产品列表</h2>
+							</div>
+							<ul class="item bg">
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/demo/goods.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+							</ul>
+					    </div>
+						<!--二个商品列表结束-->
+						<!--三个商品列表开始-->
+					    <!--<div class="three-goods list-goods" style="margin-top: 1rem;">
+					    	<div class="mui-table-view-cell title-warp">
+								<h2 class="seckill-title fl mall-font-14">秒杀专区 Sale GoodS 三产品列表</h2>
+							</div>
+							<ul class="item bg">
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+										<span class="mall-color-title mall-white">贝德玛贝德玛 500ML贝德玛贝德玛 500ML贝德玛贝德玛 500ML</span>
+										<section class="mall-color-btn"><span class="mall-font-14">￥39.</span><span>00</span></section>
+									</a>
+								</li>
+							</ul>
+					    </div>-->
+						<!--三个商品列表结束-->
+						<!--列表商品开始-->
+					    <div class="notice" style="margin-top: 1rem;">
+					    	<div class="mui-table-view-cell title-warp table-view-cell-clean">
+								<img src="../../Content/Images/mojie/notice.jpg"/>
+							</div>
+							<div class="item bg mall-color-title">
+								<span class="mall-color-btn">关于发货物流</span>
+								<p>我们是买满128元包邮，订单付款后立即发货；本店目前默认申通快递。</p>
+								<span class="mall-color-btn">关于宝贝质量</span>
+								<p>我们是买满128元包邮，订单付款后立即发货；本店目前默认申通快递。</p>
+							</div>
+					    </div>
+						<!--列表商品结束-->	
+					</div>
+				</div>
+				<footer id="footer" class="mui-bar mui-bar-tab mui-bar-footer trade-footer fixed-footer">
+					<div class="mui-btn-blue">
+						<a  class="mui-btn-bule" href="index.html"><i class="icon iconfont icon-iconhuidaoshouye"></i></a>
+						<a  class="mui-btn-bule" href="shoppingcart.html"><i class="icon iconfont icon-gouwuche-01"></i></a>
+						<a  class="mui-btn-bule" href="category.html"><i class="icon iconfont icon-fenlei"></i></a>
+						<a  class="mui-btn-bule" href="mine.html"><i class="icon iconfont icon-icongerenzhongxin-01"></i></a>
+					</div>
+				</footer>
+				
+			</div>
+			<!--主界面部分-->
+		</div>
+	</body>
+</html>
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack:true //启用右滑关闭功能
+	});
+	//轮播
+	var slider = mui("#slider");			
+	slider.slider({
+		interval: 2000
+	});
+	//侧滑
+	var offCanvasWrapper = mui('#index');//侧滑容器父节点
+	var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');//主界面容器 
+	var offCanvasSide = document.getElementById("offCanvasSide");//菜单容器
+
+	//主界面‘显示侧滑菜单’按钮的点击事件
+	document.getElementById('offCanvasShow').addEventListener('tap', function() {
+		offCanvasWrapper.offCanvas('show');
+	});
+	 //主界面和侧滑菜单界面均支持区域滚动；
+	mui('#offCanvasSideScroll').scroll();
+	mui('#offCanvasContentScroll').scroll({
+		deceleration: 0.005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+		
+	});
+	//实现ios平台原生侧滑关闭页面;
+	if (mui.os.plus && mui.os.ios) {
+		mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+			plus.webview.currentWebview().setStyle({
+				'popGesture': 'none'
+			});
+		});
+	}
+	//实现a链接跳转
+	mui('#index').on( 'tap' , 'a' , function(){
+		//业务逻辑
+		var urlselect = this.getAttribute("href");
+		mui.openWindow({
+		    url: urlselect
+		  });
+		} 
+	);
+	//控制scroll
+	window.onload = function(){
+		var height = document.getElementsByClassName('mui-scroll')[0];
+		var info = height.offsetHeight - document.body.clientHeight;
+		height.setAttribute('style','height:' + info + 'px;');
+	}
+	
+	
+</script>

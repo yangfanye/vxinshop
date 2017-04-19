@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分类</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../Content/CSS/mojie/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css" />
+		<script src="../../data/category.js"></script>
+	</head>
+	<body style="background: #FFFFFF;">
+		<div id="category" class="contaniner category bg">
+			<div class="mui-input-row mui-search mall-search">
+				<input type="search" class="mui-input-clear mall-input-search" placeholder="搜索你想要的宝贝">
+			</div>
+			<a class="mui-btn mui-icon mui-icon-search">搜索</a>
+			<div class="mui-content mui-row mui-fullscreen mall-fullscreen bg" style="border-top: 1px solid #CCCCCC;">
+			<div class="mui-col-xs-3">
+				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical mall-font-14 mall-color-title">
+					<a class="mui-control-item mall-control-item mui-active" href="#content1">推荐</a>
+					<a class="mui-control-item mall-control-item" href="#content2">品类</a>
+					<a class="mui-control-item mall-control-item" href="#content3">品牌</a>
+				</div>
+			</div>
+			<div id="segmentedControlContents" class="mui-col-xs-9" >
+				<div id="content1" class="mui-control-content mui-active">
+					<ul class="mui-table-view mall-table-view table-view-clean">
+						<h4 class="mall-color-btn mall-font-14">推荐</h4>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="pullrefresh_main.html">
+								<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="">
+								<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="">
+								<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="">
+								<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="content2" class="mui-control-content">
+				</div>
+				<div id="content3" class="mui-control-content">
+					<ul class="mui-table-view mall-table-view table-view-clean">
+						<h4 class="mall-color-btn mall-font-14">品牌</h4>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="">
+								<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="">
+								<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="">
+								<figure id="figure"><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">
+							<a href="">
+								<figure><img src="../../Content/Images/mojie/1.png"/></figure>
+								<span>洁面</span>
+							</a>
+						</li>					
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack:true //启用右滑关闭功能
+	});
+	var pinlei = document.getElementById('content2');
+	var str = '';
+	mui.each(category,function(index,item){
+		str += '<ul class="mui-table-view mall-table-view table-view-clean\">';
+		str += '<h4 class="mall-color-btn mall-font-14">' + item['text'] + '</h4>"';
+		mui.each(item['children'],function(index1,item1){
+			str += '<li class="mui-table-view-cell mall-table-view-cell table-view-cell-clean">';
+			str += '<a href="">';
+			str += '<figure><img src="' + item1['pic'] + '"/></figure>';
+			str += '<span>' + item1['text'] +'</span>';
+			str += '</a>';
+			str += '</li>';
+		})
+		
+		str += '</ul>';	
+	})
+		pinlei.innerHTML = str;
+</script>
+<script type="text/javascript">
+	var obj = document.getElementsByTagName("figure");
+	var rect = obj[0].getBoundingClientRect();
+	obj[0].(rect.width);
+	
+</script>
+
+

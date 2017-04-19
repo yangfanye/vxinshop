@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../Content/CSS/mojie/mui.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css" />
+	</head>
+	<body>
+		<section class="myorder-main bg"><!--我的订单容器-->
+			<div class="coupon-list myorder-list" style="border-bottom: 1px solid #CCCCCC;"><!--我的订单Tab头部-->
+				<div id="segmentedControl" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-primary">
+					<a class="mui-control-item mui-active" href="#item1">全部订单</a>
+					<a class="mui-control-item" href="#item2">待付款</a>
+					<a class="mui-control-item" href="#item3">待收货</a>
+					<a class="mui-control-item" href="#item4">待评价</a>
+				</div>
+			</div><!--我的订单Tab头部-->
+			<div><!--我的订单列表-->
+				<div id="item1" class="mui-control-content mui-active"><!--Tab1内容-->
+					<div id="scroll" class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-table-list table-view-clean">
+								<span><a>50896459864359876</a></span><span class="fr mall-color-btn">交易成功</span>
+								</li>
+								<li class="mui-table-view-cell mall-table-view-cell table-view-clean">
+									<figure><img style="width:100%;" src="../../Content/Images/mojie/1.png"/></figure>
+									<ul class="fr">
+										<li class="goods-name"><p class="fl"><a>蒂佳婷水润亮彩焕肤面膜蒂佳婷水润亮彩焕肤面膜蒂佳婷水润亮彩焕肤面膜</a></p><span style="font-weight: 700;line-height: 2rem;">￥196.00</span></li>
+										<li class="goods-attr">
+											<span class="fl" >规格</span>
+											<span  class="fr">*1</span>
+										</li>
+										<!--<li class="goods-serve fl">七天退换</li>-->
+									</ul>
+								</li>
+								<li class="mui-table-view-cell table-view-cell-coupon ">
+								<span style="width:100%;" class="fr">共2件商品 合计：<strong class="mall-font-14">￥698.50</strong>（含运费￥0.00）</span>
+								</li>
+								<li class="mui-table-view-cell submit">
+									<a class="mui-btn mall-btn fr" href="orderdetail.html">订单详情</a>
+									<a class="mui-btn mall-btn fr" href="orderdetail.html">订单详情1</a>
+								</li>
+							</ul>
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-table-list table-view-clean">
+								<span>50896459864359876</span><span class="fr mall-color-btn">交易成功</span>
+								</li>
+								<li class="mui-table-view-cell mall-table-view-cell table-view-clean">
+									<figure><img style="width:100%;" src="../../Content/Images/mojie/1.png"/></figure>
+									<ul class="fr">
+										<li class="goods-name"><p class="fl">蒂佳婷水润亮彩焕肤面膜蒂佳婷水润亮彩焕肤面膜蒂佳婷水润亮彩焕肤面膜</p><span style="font-weight: 700;line-height: 2rem;">￥196.00</span></li>
+										<li class="goods-attr"><span class="fl" >规格</span><span  class="fr">*1</span></li>
+										<!--<li class="goods-serve fl">七天退换</li>-->
+									</ul>
+								</li>
+								<li class="mui-table-view-cell table-view-cell-coupon ">
+								<span style="width:100%;" class="fr">共2件商品 合计：<strong class="mall-font-14">￥698.50</strong>（含运费￥0.00）</span>
+								</li>
+								<li class="mui-table-view-cell submit">
+									<a class="mui-btn mall-btn fr" href="">订单详情</a>
+									<a class="mui-btn mall-btn fr" href="">订单详情1</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--Tab1内容-->
+			</div><!--我的订单列表-->
+		</section>	<!--我的订单容器-->
+	</body>
+</html>
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script type="text/javascript">
+	mui.init({
+		swipeBack:true //启用右滑关闭功能
+	});
+</script>

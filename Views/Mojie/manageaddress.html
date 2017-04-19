@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理收货地址</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="../../Content/CSS/mojie/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/icons-extra.css" />
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css" />
+	</head>
+	<body>
+		<div class="contaniner manageaddress">
+			<section class="address-main"><!--地址容器-->
+				<div class="address-list"><!--地址列表-->
+					<div class="item-list bg"><!--地址元素-->
+						<div class="item-from ">
+							<ul>
+								<li class="title"><span class="mall-font-14 mall-color-title">杨帆</span><span class="mall-font-14 mall-color-title fr">15692282990</span></li>
+								<li><p class="mall-color-title">天津市河西区友谊路5号北方金融大厦12C</p></li>
+							</ul>
+						</div>
+						<div class="item-action">
+							<figure>
+								<img class="sel" src="../../Content/Images/mojie/check.png"/>
+								<span class="mall-font-14 mall-color-btn">默认地址</span>
+							</figure>
+							<div>
+								<a class="mui-btn mui-icon mui-icon-compose" href="">编辑</a>
+								<a class="confirmBtn mui-btn mui-icon mui-icon-trash mui-btn-blue mui-btn-outlined" num="1" href="">删除</a>
+							</div>
+						</div>
+					</div><!--地址元素-->
+					<div class="item-list bg"><!--地址元素-->
+						<div class="item-from ">
+							<ul>
+								<li class="title"><span class="mall-font-14 mall-color-title">杨帆</span><span class="mall-font-14 mall-color-title fr">15692282990</span></li>
+								<li><p class="mall-color-title">天津市河西区友谊路5号北方金融大厦12C</p></li>
+							</ul>
+						</div>
+						<div class="item-action">
+							<figure>
+								<img class="sel" src="../../Content/Images/mojie/check.png"/>
+								<span class="mall-font-14 mall-color-btn">默认地址</span>
+							</figure>
+							<div>
+								<a class="mui-btn mui-icon mui-icon-compose" href="">编辑</a>
+								<a class="confirmBtn mui-btn mui-icon mui-icon-trash mui-btn-blue mui-btn-outlined" num="2" href="">删除</a>
+							</div>
+						</div>
+					</div><!--地址元素-->
+				</div><!--地址列表-->
+				<div class="add-address-submit">
+					<a class="mui-btn mui-btn-danger mui-btn-block mui-icon mui-icon-plusempty" href="myaddress.html">新增收货地址</a>					
+				</div>
+				<span id="test">
+					
+				</span>
+			</section><!--地址容器-->
+		</div>
+	</body>
+</html>
+<!--<script src="../../Content/JS/mojie/jquery.js"></script>-->
+<script src="../../Content/JS/mojie/mui.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+	//mui初始化
+	mui.init({
+		swipeBack: true //启用右滑关闭功能
+	});
+	mui('.confirmBtn').each(function(){
+		this.addEventListener('tap',function(e){
+			var btnArray = ['取消', '确认'];
+			var id = this.getAttribute("num");
+			mui.confirm('您确定删除该地址吗？', '', btnArray, function(e) {
+				if (e.index == 1) {
+					DelCustomerAddress();
+				} else {
+					javascript:hiddenDiv('delTip');
+				}
+			},'div')
+		})
+	});
+</script>

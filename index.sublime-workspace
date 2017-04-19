@@ -1,0 +1,498 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"bo",
+				"bootstrap"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"echo",
+				"echo"
+			],
+			[
+				"module",
+				"module"
+			],
+			[
+				"mod",
+				"model"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"ai",
+				"animate	.animate()"
+			],
+			[
+				"th",
+				"thumbnail"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"port",
+				"portfolio"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"work",
+				"work_img"
+			],
+			[
+				"url",
+				"url()"
+			],
+			[
+				"css",
+				"css	.css() - single"
+			],
+			[
+				"defaul",
+				"date_default_timezone_set"
+			],
+			[
+				"bac",
+				"back_to_top"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"last_filter": "view",
+		"selected_items":
+		[
+			[
+				"view",
+				"View: Toggle Menu"
+			],
+			[
+				"ColorPicker",
+				"Color Picker"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"in",
+				"Package Control: Install Package→安装插件"
+			],
+			[
+				"i",
+				"Package Control: Install Package→安装插件"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/phpStudy/MySQL/bin/mysql-bin.002835",
+		"/C/Users/yangfan/Desktop/WxpayAPI_php_v3/index.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$7/menu_control.class.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$6/cache_control.class.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$8/site_control.class.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$5/admin_group_control.class.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$4/api.notify.wechat_js.php",
+		"/E/php教程/后盾视频与代码/29.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$1/api.notify.alipay.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$2/api.notify.alipay_escow.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$3/api.notify.bank.php",
+		"/C/Users/yangfan/AppData/Local/Temp/360zip$Temp/360$0/index.php",
+		"/D/wamp/www/wordpress/wp-admin/menu-header.php",
+		"/D/wamp/www/wordpress/wp-admin/media.php",
+		"/D/wamp/www/wordpress/wp-admin/menu.php",
+		"/D/wamp/www/wordpress/wp-admin/index.php",
+		"/D/wamp/www/try/index.php",
+		"/C/Users/yangfan/Desktop/test.php",
+		"/E/迅雷下载/php/[云知梦]BootStrap前端框架/text/index.html",
+		"/C/Users/yangfan/Desktop/page(pc)/page2(pc)/index.html",
+		"/C/Users/yangfan/Desktop/page(pc)/page2(pc)/css/css2.css",
+		"/C/Users/yangfan/Desktop/page(pc)/page1(pc)/css/css.css",
+		"/C/Users/yangfan/Desktop/page(pc)/page1(pc)/index.html",
+		"/C/Users/yangfan/Desktop/1.js",
+		"/C/Users/yangfan/Desktop/wx_sample.php",
+		"/C/Users/yangfan/Downloads/wx_sample.php",
+		"/D/wamp/www/整理后的代码/angular/5.html",
+		"/D/wamp/www/整理后的代码/angular/5.php",
+		"/D/wamp/www/c51/html5/c51/angular/5.html",
+		"/C/Users/yangfan/Desktop/test/mianshi.php",
+		"/D/wamp/www/整理后的代码/angular/1-基础.html",
+		"/D/wamp/www/整理后的代码/angular/5-与php的数据交换.html",
+		"/D/wamp/www/c51/html5/c51/angular/5.php",
+		"/D/wamp/www/整理后的代码/angular/3.html",
+		"/D/wamp/www/整理后的代码/angular/4.html",
+		"/D/wamp/www/整理后的代码/angular/2.html",
+		"/D/wamp/www/c51/html5/c51/angular/4.html",
+		"/D/wamp/www/c51/html5/c51/angular/3.html",
+		"/D/wamp/www/c51/html5/c51/angular/2.html",
+		"/D/wamp/www/c51/html5/c51/angular/1.html",
+		"/C/Users/yangfan/Desktop/index.html",
+		"/D/wamp/www/SUPERSHOP/Application/Index/Controller/CheckOutController.class.php",
+		"/D/wamp/www/SUPERSHOP/Application/Index/Controller/ProductController.class.php",
+		"/D/Program Files (x86)/Sublime Text 3/Data/Packages/Emmet/Emmet.sublime-settings",
+		"/D/wamp/www/SUPERSHOP/Application/Index/Controller/EmptyController.class.php",
+		"/C/Users/Administrator/Desktop/Coreseek.php",
+		"/D/wamp/www/html/xiaofang/index.html",
+		"/D/wamp/www/html/xiaofang/css/index.css",
+		"/D/wamp/www/html/xiaofang/rencaiyaolan.html",
+		"/D/wamp/www/html/xiaofang/hongmenyinji.html",
+		"/D/wamp/www/html/xiaofang/rongyubang.html",
+		"/D/wamp/www/html/xiaofang/lingdaoguanhuai.html",
+		"/D/wamp/www/html/xiaofang/zhongdahuodong.html",
+		"/D/wamp/www/html/xiaofang/dianxingpeiyu.html",
+		"/D/wamp/www/html/xiaofang/gerenrongyu.html",
+		"/D/wamp/www/html/xiaofang/jitirongyu.html",
+		"/D/wamp/www/html/xiaofang/rongyi.html",
+		"/D/wamp/www/html/xiaofang/qianyan.html",
+		"/D/wamp/www/html/xiaofang/liren.html",
+		"/D/wamp/www/html/xiaofang/go.html",
+		"/F/u盘/wamp/JavaScript/6.16/无缝左右滑动切换.html",
+		"/F/u盘/面试/bootmetro/index.html",
+		"/F/u盘/wamp/JavaScript/6.18/js无缝滚动向上.html",
+		"/D/wamp/www/html/xiaofang/js/xs.js",
+		"/D/wamp/www/html/xiaofang/js/respond.min.js",
+		"/D/wamp/www/html/xiaofang/js/html5shiv.min.js",
+		"/D/wamp/www/show_view/js/responsive-nav.js",
+		"/D/wamp/www/show_view/js/custom.js",
+		"/D/wamp/www/show_view/index.html",
+		"/D/wamp/www/ACG/app/Conf/config.php",
+		"/D/wamp/www/ACG/index.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp13350/www/ACG/app/Runtime/Cache/Index/c19856028965a1db806ae6ca642f7671.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp10713/www/ACG/index.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp11044/www/ACG/app/Conf/config.php",
+		"/D/wamp/www/acg.sql",
+		"/D/wamp/www/ACG/app/Modules/Admin/Action/AdminAction.class.php",
+		"/D/wamp/www/show_view/js/jquery.isotope.min.js",
+		"/D/wamp/www/show_view/js/retina.js",
+		"/D/wamp/www/show_view/js/input.fields.js",
+		"/C/Users/Administrator/Desktop/index.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp33754/logs/access.log",
+		"/C/Users/Administrator/Desktop/Coreseek",
+		"/D/wamp/www/show_view/js/jquery.isotope.load_home.js",
+		"/D/wamp/www/html/elong/css/index.css",
+		"/D/wamp/www/html/elong/js/index.js",
+		"/D/wamp/www/html/elong/index.html",
+		"/D/wamp/www/show_view/font/font.css",
+		"/C/Users/Administrator/AppData/Local/Temp/scp18100/www/wish/Hdphp/Library/App.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp13019/www/wish/index.php",
+		"/E/linux/所有命令.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp11462/www/index.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp07840/www/cms/Application/Common/Config/config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp06704/www/cms/.htaccess",
+		"/C/Users/Administrator/AppData/Local/Temp/scp47472/www/wenda/Application/Common/Conf/Config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp46200/www/cms/Application/Common/Config/config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp47648/www/SUPERSHOP/Application/Common/Config/config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp40076/www/cms/Application/Admin/Controller/ArticleController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp39659/www/cms/Application/Admin/Controller/UserController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp30004/www/cms/Application/Common/Config/config.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp29772/www/cms/Application/Common/Config/webConfig.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp19036/www/wenda/Application/Home/Controller/ListController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp30708/www/cms/.htaccess",
+		"/D/wamp/www/php项目文件/php项目文件/后台/wenda/Application/Common/Conf/CateData.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp19612/www/wenda/Application/Home/Controller/IndexController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp24692/www/wenda/Application/Admin/Controller/IndexController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp24296/www/wenda/Application/Admin/View/Index/index.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp09552/www/wenda/Application/Admin/View/System/passwd.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp09513/www/wenda/Application/Admin/View/System/web_set.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp09225/www/wenda/Application/Admin/View/System/welcome.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp08492/www/wenda/Application/Admin/View/Point/index.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp08143/www/wenda/Application/Admin/View/Level/index.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp06195/www/wenda/Application/Admin/View/Index/welcome.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp06584/www/wenda/Public/Admin/Css/public.css",
+		"/C/Users/Administrator/AppData/Local/Temp/scp27244/www/wenda/Public/Admin/Css/admin.css",
+		"/C/Users/Administrator/AppData/Local/Temp/scp07623/www/wenda/Public/Admin/Css/add_category.css",
+		"/C/Users/Administrator/AppData/Local/Temp/scp20760/www/wenda/Application/Admin/Controller/LoginController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp16273/www/wenda/Application/Admin/View/Login/index.html",
+		"/C/Users/Administrator/AppData/Local/Temp/scp17195/www/wenda/Public/Admin/Css/login.css",
+		"/C/Users/Administrator/AppData/Local/Temp/scp36281/etc/httpd/conf/httpd.conf",
+		"/C/Users/Administrator/AppData/Local/Temp/scp25079/www/wenda/Hdphp/Library/Controller.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp25230/www/wenda/Hdphp/Library/Functions.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp23677/www/wenda/Hdphp/Hd.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp20007/www/wenda/Hdphp/Library/App.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp26705/www/wenda/Hdphp/Common/error.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp27563/www/wenda/Application/Admin/Controller/CommonController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp27167/www/wenda/Application/Admin/Controller/LoginController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp27933/www/wenda/Application/Admin/Controller/IndexController.class.php",
+		"/C/Users/Administrator/AppData/Local/Temp/scp22641/www/wenda/index.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 107.0,
+		"where_history":
+		[
+			"D:\\wamp\\www\\show_view",
+			"D:\\wamp\\www\\html\\elong",
+			"D:\\wamp\\www\\SUPERSHOP\\"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ul",
+			"portfolio1",
+			"#portfolio1",
+			"重大活动",
+			"历任领导",
+			"人才摇篮",
+			"col-md-3",
+			"\"img/",
+			"img",
+			"src",
+			"alt=\"100%x200\"",
+			"data-src=\"holder.js/100%x200\"",
+			"src",
+			"images",
+			"alt=\"100%x200\"",
+			"data-src=\"holder.js/100%x200\"",
+			"portfolio",
+			"assets",
+			"portfolio",
+			"img",
+			"menu-container",
+			"logo-container",
+			"menu-container",
+			"logo",
+			"logo-container",
+			"clients",
+			"portfolio",
+			"商城系统",
+			"php",
+			"clients",
+			"about",
+			"php",
+			"Container Cargo Ship ",
+			"ad1_150511.jpg",
+			"ad2_150619.jpg",
+			"ad2",
+			"ad1_150511.jpg",
+			"portfolio",
+			"./font",
+			"font",
+			"http://fonts.gstatic.com/s/ruda/v7",
+			"images",
+			"admin",
+			"images",
+			"Asia/Chongqing",
+			"date_default_timezone_set",
+			"$upload=new Upload",
+			"date_default_timezone_set",
+			"new Upload",
+			"$upload",
+			"UPLOAD_PATH",
+			"back-to-top",
+			"up.png",
+			"topcontrol",
+			"img/up.png",
+			"cp",
+			"tar "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"./img",
+			"./img",
+			"alt=\"\"",
+			"data-src=\"\"",
+			"alt=\"\"",
+			"data-src=\"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 120.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

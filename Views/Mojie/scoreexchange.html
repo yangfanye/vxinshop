@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>积分兑换</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../Content/CSS/mojie/mui.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/demo.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/iconfont.css"/>
+		<link rel="stylesheet" href="../../Content/CSS/mojie/style.css"/>
+	</head>
+	<body>
+	<div id="scoreexchange" class="contaniner fixed-contb">
+		<section >
+			<div class="myorder-main bg con-product"><!--商品信息容器-->
+				<ul class="mui-table-view table-view-clean" style="margin:0 0;">
+					<li class="mui-table-view-cell mui-table-list table-view-clean">
+						<span class="mall-font-14 mall-color-title">商品信息</span>
+					</li>
+				</ul>
+				<ul class="mui-table-view table-view-clean" style="margin:0 0;"><!--商品信息-->
+					<li class="mui-table-view-cell mall-table-view-cell table-view-clean">
+						<figure><img style="width:100%;" src="@childProductImg"/></figure>
+						<ul class="fr">
+							<li class="goods-name"><p class="fl">@proName</p></li>
+							<li class="goods-attr">
+								<span class="mall-color-btn" >所需积分:</span><span name="needScore">@needScore</span>
+							</li>
+							<li class="goods-attr">
+								<span class="mall-color-btn" >剩余积分:</span><span>@customerScore</span>
+							</li>
+						</ul>
+					</li>	
+				</ul><!--商品信息-->
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<span class="fl ">送货方式</span>
+						<div class="item-action choose-item-action fr">
+							<span class="fr">&nbsp;自提</span>
+							<figure class="fr">
+								<img class="sel" src="../../Content/Images/mojie/checke.png"/>
+							</figure>
+						</div>
+						<div class="item-action choose-item-action fr">
+							<span class="fr">&nbsp;包邮</span>
+							<figure class="fr">
+								<img class="sel" src="../../Content/Images/mojie/check.png"/>
+							</figure>
+						</div>
+					</li>
+				</ul>
+			</div><!--商品信息容器-->
+			<section  class="address-main "><!--地址容器-->
+				<div id="address" class="address-list"><!--地址列表-->
+					<div class="item-from">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell sco-table-view-cell">
+								<a href="/MobileMall/chooseaddress" onclick="return ChooseAddress(this)" class="mui-navigate-right">
+								<span class="mall-font-14 mall-color-title">收件人：&nbsp;@customerAddress.Addressee</span>
+								<span class="mall-font-14 mall-color-title">收件人:&nbsp; @customerAddress.Tel</span>    
+								<span class="mall-font-14 mall-color-title" >地址:&nbsp;@address</span>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="/MobileMall/chooseaddress" onclick="return ChooseAddress(this)" class="mui-navigate-right">
+								<span class="mall-font-14 mall-color-title">收请填写收货地址</span>
+								</a>
+							</li>
+						</ul>
+					</div>	
+				</div>
+				<div id="divStoreList" class="address-list">
+					<div class="item-from">
+						<ul class="mui-table-view" id="nearStore" onscroll="SusDiv();">
+							<li class="mui-table-view-cell sco-table-view-cell">
+								<span class="mall-font-14 mall-color-title">可到任意门店领取，附近可领店铺：</span>
+								<span class="mall-font-14 mall-color-title">领取有效期：@changeTime</span>    
+							</li>
+							<li class="mui-table-view-cell sco-table-view-cell" id="store_list">
+								<span class="mall-font-14 mall-color-title">@item.Name</span>
+								<span class="mall-font-14 mall-color-title">@item.Addresses</span>
+								<span class="mall-font-14 mall-color-title">@Common.Utils.MapDistance(item.Distance)</span>
+							</li>
+							<div style="margin-top: 1rem; text-align: center;" id="divStoreList">
+					            <img src="../../Content/Images/cryface.png" style="width: 90px; height: 80px;" />
+					            <div class="noitem">您的附近没有发现门店哦~</div>
+					        </div>
+						</ul>
+					</div>
+		        </div>
+			</section><!--地址容器-->
+		</section> 
+	</div>
+	<footer class="trade-footer fixed-footer">
+		<div class="trade-price-info sco-price-info">
+			<ul>
+				<li>
+					<span >兑换1件商品，消耗您</span>
+					<span class="price" name="needScore">@needScore</span>
+					<span>积分，确定兑换？</span>
+				</li>
+			</ul>
+		</div>
+		<div class="trade-order-submit fr">
+			<a id="exChange" class="mui-btn-bule">确定</a>
+		</div>
+	</footer>
+		<div id="popNoBind" class="popMask1" style="display:none;position:fixed;">
+		    <div id="popNotBind" class="popWin1" style="display: block;border-radius:0px;height:auto;">
+		        <div id="goBack" style="text-align:center;display: block;">
+		                @*兑换成功后，10积分将被扣除，请在2015.09.01-2015.11.11内到店铺领取，逾期作废*@
+		                @*兑换成功后，1000积分将被扣除*@
+		            <p style="font-size: 1rem; color: #212121; margin: 1em auto; padding:0 1rem;" id="pointTitle">兑换成功后,1000积分将被扣除</p>
+		            <div style="margin: 0 0.5em">
+		                <div class="div_floatLeft" id="confirm">
+		                    <a class="a_pinknobg" href="javascript:void(0);" id="scoreOrder" style="border-radius:0px;">确定</a>
+		                </div>
+		                <div class="div_floatLeft">
+		                    <a class="a_pinknobg" href="javascript:void(0);" onclick="hiddenDiv('popNoBind');" style="border-radius:0px;">取消</a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<input type="hidden" id="hidStoreScore" value="@storeScore"/>
+		<input type="hidden" id="hidExpressScore" value="@expressScore"/>
+		<input type="hidden" id="hidScoreType" value="@scoreType" />
+		<input type="hidden" id="hidSelAddress" value="@ViewBag.selAddress" />
+		<input type="hidden" id="hidChangeTime" value="@changeTime" />
+		<input type="hidden" id="hidCusScore" value="@customerScore" />
+		<input type="hidden" id="hidNeedScore" value="@needScore"/>
+		<input type="hidden" id="hidProductToken" value="@ViewBag.productToken" />
+		<input type="hidden" id="hidAttributID" value="@ViewBag.attributID" />
+		<input type="hidden" id="hidOrderAddressId" value="@addressId" />
+		<script>
+		    $().ready(function () {
+		        var scoreType = $('#hidScoreType').val();
+		        var selAddress = $('#hidSelAddress').val();
+		        if (selAddress == "yes") {
+		            //包邮
+		            FreeForChange();
+		        } else {
+		            if (scoreType == 'free') {
+		                //包邮
+		                FreeForChange();
+		            } else {
+		                //自提
+		                PickUpForChange();
+		            }
+		        }
+		
+		        $("#main_footer").css("display", "none");
+		        $(".contenter").css("margin-bottom", "60px");
+		    });
+		
+		    $('#expressScore,#storeScore').on("click", function () {
+		        var type = $(this).attr('id');
+		        if (type == 'expressScore') {
+		            //包邮
+		            FreeForChange();
+		        } else {
+		            //自提
+		            PickUpForChange();
+		        }
+		    });
+		
+		    $('#exChange').on('click', function () {
+		        var storeScore = $('#hidStoreScore').val();
+		        var expressScore = $('#hidExpressScore').val();
+		        var needScore = $('#hidNeedScore').val();
+		        var cusScore = $('#hidCusScore').val();
+		        var addressId = $("#hidOrderAddressId").val();
+		        var scoreType = $("#hidScoreType").val();
+		        if (storeScore == "0" && expressScore=="0")
+		        {
+		            MobileAlert('该商品暂不支持兑换', 2000);
+		            return false;
+		        }
+		        if (parseInt(needScore) > parseInt(cusScore)) {
+		            MobileAlert('您的积分不足哦', 2000);
+		            return false;
+		        }
+		        if (addressId == "" && scoreType == "free") {
+		            MobileAlert("请填写收货地址", 2000);
+		            return false;
+		        }
+		        $('#popNoBind').show();
+		    });
+		
+		    //选择地址
+		    function ChooseAddress(aObj) {
+		        var url = aObj.href;
+		        var paramObj = { turnUrl: document.URL + "&selAddress=yes" };
+		        location.href = url.getJumpUrl(paramObj);
+		        return false;
+		    }
+		
+		    //包邮
+		    function FreeForChange() {
+		        var hidExpressScore = $('#hidExpressScore').val();
+		        $('#hidScoreType').val('free')
+		        $('#expressScore').attr('src', '../../Content/Images/mall/icon_sure@2x.png');
+		        $('#storeScore').attr('src', '../../Content/Images/mall/icon_uncheck@2x.png');
+		        $('#address').show();
+		        $('#divStoreList').hide();
+		        $("span[name='needScore']").text(hidExpressScore);
+		        $('#hidNeedScore').val(hidExpressScore)
+		        $('#pointTitle').text('兑换成功后，' + hidExpressScore + '积分将被扣除');
+		    }
+		    //自提
+		    function PickUpForChange() {
+		        var hidStoreScore = $('#hidStoreScore').val();
+		        var hidChangeTime = $('#hidChangeTime').val();
+		        $('#hidScoreType').val('pickup')
+		        $('#expressScore').attr('src', '../../Content/Images/mall/icon_uncheck@2x.png');
+		        $('#storeScore').attr('src', '../../Content/Images/mall/icon_sure@2x.png');
+		        $('#address').hide();
+		        $('#divStoreList').show();
+		        $("span[name='needScore']").text(hidStoreScore);
+		        $('#hidNeedScore').val(hidStoreScore)
+		        $('#pointTitle').text('兑换成功后，' + hidStoreScore + '积分将被扣除，请在' + hidChangeTime + '内到店铺领取，逾期作废');
+		    }
+		
+		    $('#scoreOrder').on('click', function () {
+		        var str = "<a class=\"a_pinknobg\" href=\"javascript:void(0);\" style=\"border-radius:0px;background-color:#bbb;border: 1px solid #bbb;\">确定</a>";
+		        $('#confirm').html("");
+		        $('#confirm').html(str);
+		        var scoreType = $('#hidScoreType').val(); //兑换方式
+		        var productToken = $('#hidProductToken').val();
+		        var attributID = $('#hidAttributID').val();
+		        var addressId = $('#hidOrderAddressId').val();
+		        var needScore = $('#hidNeedScore').val();
+		        var jsonData = { scoreType: scoreType, productToken: productToken, attributID: attributID, addressId: addressId, needScore: needScore };
+		        $.ajax({
+		            type: "POST",
+		            url: "AddScoreOrder".getJumpUrl(),
+		            data: jsonData,
+		            dataType: 'json',
+		            success: function (result) {
+		                if (result.messagecode == 5) {
+		                    MobileAlert('兑换成功', 2000);
+		                    location.href = "/MobileMall/myorder?type=2".getJumpUrl();
+		                } else {
+		                    MobileAlert(result.message, 2000);
+		                }
+		                return false;
+		            },
+		            error: function (XMLHttpRequest, textStatus, errorThrown) {
+		                pageAlert(errorThrown, 2000);
+		            }
+		        });
+		    });
+		
+		    function SusDiv() {
+		        var top = document.getElementById('nearStore').getBoundingClientRect().top;
+		        var listTop = document.getElementById('store_list').getBoundingClientRect().top;
+		        if (top <= 0) {
+		            $('#nearStore').addClass('store_sus');
+		        }
+		        if (listTop>=58)
+		        {
+		            $('#nearStore').removeClass('store_sus');
+		        }
+		    }
+		
+		    window.onscroll = SusDiv;
+		</script>
+			</body>
+		</html>
