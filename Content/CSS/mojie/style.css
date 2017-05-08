@@ -5,22 +5,20 @@
         font-size: 12px;}}
 @media screen and (min-width: 415px) and (max-width: 639px) {
   html {
-    font-size: 13px; } }
+    font-size: 13px; }}
 @media screen and (min-width: 640px) and (max-width: 719px) {
   html {
-    font-size: 20px; } }
+    font-size: 20px; }}
 @media screen and (min-width: 720px) and (max-width: 749px) {
   html {
-    font-size: 22.5px; } }
+    font-size: 22.5px; }}
 @media screen and (min-width: 750px) and (max-width: 799px) {
   html {
-    font-size: 23.5px; } }
-@media screen and (min-width: 800px) {
+    font-size:23.5px;}}
+@media screen and (min-width:800px) {
   html {
-    font-size: 25px; } }
-* {
-  margin: 0;
-  padding: 0; }
+    font-size: 25px;}}
+* {margin: 0;padding: 0;}
 
 html, body {
   width: 100%; }
@@ -48,7 +46,6 @@ audio, canvas, progress, video {
 
 figure {
   margin: 0; }
-
 li {
   list-style: none; }
 
@@ -57,7 +54,9 @@ a {
   color: #CCCCCC; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none; 
+  background:none;
+  }
 
 .iconfont {
   font-size: 24px;
@@ -1422,13 +1421,14 @@ sub {
   display: inline-block;
   width: 85%;
   height: 4.17rem;
-  padding-top: 12px;
+  padding-top: 0.6rem;
   padding-bottom: 12px;
   text-align: center;
   overflow: hidden; }
 
 .index #header figure img {
-  height: 26px; }
+  height: 3rem; 
+  }
 
 .index nav {
   margin-top: 4.17rem;
@@ -1492,12 +1492,10 @@ sub {
 
 .index .coupon-main {
   width: 100%;
-  /*border-top:1px solid #CCCCCC;*/
   margin-top: 1rem;
   padding: 0 5%;
   background: #FFFFFF;
   overflow: hidden; }
-
 .index .coupon-main .title-warp {
   padding: 0.8rem 0; }
 
@@ -1562,7 +1560,8 @@ sub {
   padding: 0 2%; }
 
 .index .list-goods .item figure {
-  width: 100%; }
+  width:100%;
+  }
 
 .index .list-goods .item figure img {
   display: block;
@@ -1615,18 +1614,18 @@ sub {
 
 .index aside .mui-table-view li {
   padding: 0;
-  margin-bottom: 32px; }
+  margin-bottom: 1.6rem; }
 
 #index aside .mui-table-view li a {
   display: inline-block;
   width: 40%;
-  margin-right: 10px;
-  line-height: 20px;
-  font-size: 16px;
+  margin-right: 5%;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
   color: #FFFFFF;
   overflow: hidden; }
   #index aside .mui-table-view li a img {
-    width: 16px;
+    width: 1.3rem;
     margin-right: 0.5rem; }
 
 #index aside .mui-table-view li a i {
@@ -1644,6 +1643,7 @@ sub {
   margin: 0 1% 32px 1%;
   overflow: hidden;
   font-size: 1rem; }
+
 
 #index aside .item-category li a img {
   display: block;
@@ -1696,6 +1696,8 @@ sub {
   opacity: 0.5;
   border: 1px solid #FFFFFF;
   border-radius: 1rem; }
+  
+#footer.kefu{width: 51.7%;}
 
 #footer .mui-btn-blue {
   padding: 0 5%;
@@ -1707,14 +1709,18 @@ sub {
   width: 22%;
   line-height: 3rem;
   text-align: center; }
-
+#footer .mui-btn-blue a.kefu{width: 18%;}
 #footer .mui-btn-blue a i {
   vertical-align: middle; }
 
 #footer .mui-btn-blue a .iconfont {
   color: #FFFFFF;
-  font-size: 20px; }
-
+  font-size: 1.5rem; }
+#index .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	font-size: 1.25rem;
+	line-height: 2.25rem;
+	height:2.25rem
+}
 /*首页*/
 /*商品详情*/
 .product .contaniner {

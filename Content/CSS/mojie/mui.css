@@ -2012,7 +2012,7 @@ h1,h2,h3,h4,h5,h6
 
 .mui-table-view-inverted .mui-table-view-cell.mui-active,.mui-table-view-inverted .mui-table-view-cell>a:not(.mui-btn).mui-active
 {
-	background-color: #242424
+	background-color: #242424;
 }
 
 .mui-table-view-cell
@@ -2048,7 +2048,7 @@ h1,h2,h3,h4,h5,h6
 
 .mui-table-view-cell.mui-active
 {
-	background-color: #eee
+	background-color: #eee;
 }
 
 .mui-table-view-cell:last-child:after,.mui-table-view-cell:last-child:before
@@ -2070,7 +2070,7 @@ h1,h2,h3,h4,h5,h6
 
 .mui-table-view-cell>a:not(.mui-btn).mui-active
 {
-	background-color: #eee
+	/*background-color: #eee*/
 }
 
 .mui-table-view-cell p
